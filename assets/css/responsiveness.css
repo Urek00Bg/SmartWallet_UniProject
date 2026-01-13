@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+    .services_card_holder {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        grid-template-columns: 1fr; /* Логото, менюто и слогана застават един под друг */
+        gap: 10px;
+    }
+    
+    .nav-item-container {
+        grid-template-columns: 1fr; /* Елементите в менюто един под друг */
+        text-align: center;
+    }
+
+    .services_card_holder, .team_card_holder {
+        grid-template-columns: 1fr; /* Картите стават в една колона */
+    }
+
+    #contact form {
+        width: 90%; /* Формата заема повече място на телефон */
+        padding: 40px 20px;
+    }
+}
