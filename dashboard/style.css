@@ -92,7 +92,6 @@ body{
     gap: 10px;
 }
 
-/* Специален бутон за Expense Tracker */
 
 .transaction-history {
     margin-top: 20px;
@@ -137,7 +136,6 @@ body{
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Колоните за подравняване */
 .history-header div, .history-row div {
     flex: 1;
     text-align: left;
@@ -148,7 +146,7 @@ body{
     font-weight: bold;
 }
 
-/* Цветове за транзакциите */
+
 .history-row.income div:last-child {
     color: #10b981; 
 }
@@ -157,17 +155,6 @@ body{
     color: #f43f5e; 
 }
 
-/* Адаптивност за телефон */
-@media screen and (max-width: 768px) {
-    .history-header {
-        font-size: 12px;
-        padding: 10px;
-    }
-    .history-row {
-        padding: 10px;
-        font-size: 13px;
-    }
-}
 
 
 @media screen and (max-width: 768px) {
@@ -209,5 +196,14 @@ body{
         display: block;
         margin-top: 5px;
         line-height: 1.2;
+    }
+
+    .history-header {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .history-row {
+        padding: 10px;
+        font-size: 13px;
     }
 }

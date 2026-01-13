@@ -9,7 +9,8 @@ nav {
     place-items: center;
     background-color: #0f172a;
     padding: 10px 0;
-    border-bottom: 1px solid #1e293b;
+    border-bottom: 3px solid #1e293b52;
+    box-shadow: 4px 13px 34px -4px #5270a152;
 }
 ul li{
     display: inline;
