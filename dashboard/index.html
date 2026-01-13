@@ -19,7 +19,7 @@
                 <nav aria-label="Dashboard Navigation">
                     <div class="nav-hamburger">
                         <button id="nav-toggle" aria-label="Toggle Navigation Menu">
-                            <i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-bars item-pic"></i>
                         </button>
                     </div>
                     
@@ -69,7 +69,7 @@
             </section>
 
             <section id="dashboard-boxes" aria-labelledby="management-heading">
-                <h2 id="management-heading" class="visually-hidden">Financial Management Tools</h2>
+                <h2 id="management-heading" class="">Financial Management Tools</h2>
                 <div class="boxes_holder">
 
                     <div class="dashboard_box">
@@ -91,19 +91,19 @@
                         <button type="button" id="reset-btn">Reset All Data</button>
                     </div>
 
-                    <div class="dashboard_box">
+                    <div class="dashboard_box ">
                         <h2>Safety & Savings</h2>
                         <p>Protect yourself from unexpected bills and build your future.</p>
                         <div class="inputs_buffer-goals">
                             <label for="buffer-range">Risk funds: <span id="buffer-pct">10</span>%
                                 <br><span>We recommend 10-15% for safety</span>
                             </label>
-                            <input type="range" id="buffer-range" min="0"  max="50" value="5">
+                            <input type="range" id="buffer-range" min="0"  max="80" value="5">
 
                             <label for="savings-range" style="margin-top: 15px; display: block;">Savings Goal: <span id="savings-pct">5</span>%
                                 <br><span>Pay yourself first!</span>
                             </label>
-                            <input type="range" id="savings-range" min="0" max="50" value="5">
+                            <input type="range" id="savings-range" min="0" max="80" value="5">
                             
                             <div class="buffer-info">
                                 <p>Risk Buffer: <strong id="reserved-sum">$0.00</strong></p>
@@ -114,7 +114,7 @@
                         </div>
                     </div>
 
-                    <div class="dashboard_box">
+                    <div class="dashboard_box ">
                         <h2>Log Expense</h2>
                         <p>Record a new transaction to update your tracker.</p>
                         <div class="inputs_log-expense">
@@ -134,6 +134,7 @@
                                 <div>Date</div>
                                 <div>Description</div>
                                 <div>Amount</div>
+                                <div>Action</div>
                             </div>
                             <div id="transaction-list"></div>
                         </div>

@@ -34,3 +34,25 @@
     opacity: 1;
     transform: translateY(0); /* Връщане на място */
 }
+#callToActionBtn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+.service_card:hover {
+    border-color: #6366f1;
+}
+.team_card:hover {
+    border-color: #6366f1;
+}
+#contact button:hover, #login-section button:hover {
+    opacity: 0.8;
+}
+#backToTop:hover {
+    background-color: #059669;
+    transform: scale(1.1);
+}
+.nav-item-container li a:hover {
+    cursor: pointer;
+    color: #10b981 !important;
+    opacity: 0.8;
+}

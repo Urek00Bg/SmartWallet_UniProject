@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     /* Nav Bar Structure */
     nav {
         min-height: 10vh;
@@ -16,6 +16,16 @@
         font-size: 24px;
         cursor: pointer;
         grid-column: 1;
+    }
+    #nav-toggle {
+        position: static; 
+        top: auto;
+        left: auto;
+        min-height: auto;
+        min-width: auto;
+        padding: 10px;
+        border: none;
+        background-color: transparent;
     }
 
     /* Logo Alignment */

@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="../assets/css/responsiveness.css">
         <script src="https://kit.fontawesome.com/89708da992.js" crossorigin="anonymous"></script>
         <script src="../assets/js/login.js" defer></script>
+        <script src="../assets/js/navbar.js" defer></script>
     </head>
     <body>
 
@@ -57,15 +58,14 @@
                     </div>
 
                     <div class="nav-slogan">
-                        <p>Welcome back, <span id="user-name">User</span></p>
+                        <p>Budget breakdown made easy</p>
                     </div>
                 </nav>
             </header>
 
         <main id="login-content">
-            <section id="login-section" aria-labelledby="login-heading">
-                <h1 id="login-heading">Please log in to continue</h1>
-                
+            <section id="login-section" aria-labelledby="login-heading"> 
+                <h1 id="login-heading">Log in</h1>               
                 <div class="login-container">
                     <form action="../dashboard/index.html" method="GET">
                         <label for="username">Username:</label>
@@ -75,6 +75,7 @@
                         <input type="password" id="password" name="password" required>
 
                         <button type="submit">Login</button>
+                        <p class="login-notice">Login page is not connected to any database, all information is stored inside your browser</p>
                     </form>
                 </div>
             </section>

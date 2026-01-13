@@ -19,4 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
 
+        alert("This is a demo website, created for university purposes. Everything is stored locally in your browser and no data is sent to any server.");
+
 });

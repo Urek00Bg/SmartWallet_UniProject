@@ -30,11 +30,6 @@ ul li{
     padding: 5px;
     transition: 0.3s;
 }
-.nav-item-container li a:hover {
-    cursor: pointer;
-    color: #10b981 !important;
-    opacity: 0.8;
-}
 a{
     text-decoration: none;
     /* Slate White Text */
@@ -55,7 +50,24 @@ a{
     font-size: 14px;
 }
 .nav-hamburger {
-    display: none; 
+    display: none;
+}
+#nav-toggle{
+    background: none;
+    border: none;
+    color: #f1f5f9;
+    min-height: 4vh;
+    min-width: 4vw;
+    border-radius: 2px;
+    border: 1px solid white;
+    background-color: #171a29;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+
 }
 #user-name {
     color: #10b981;

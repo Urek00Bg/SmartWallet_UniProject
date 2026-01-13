@@ -40,10 +40,7 @@ body {
     box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
 }
 
-#callToActionBtn:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-}
+
 
 /*Services Section*/
 #services {
@@ -75,10 +72,6 @@ body {
     color: #f1f5f9;
     transition: .3s ease-out;
 
-}
-
-.service_card:hover {
-    border-color: #6366f1;
 }
 
 .service_card h3 {
@@ -142,10 +135,6 @@ body {
     color: #f1f5f9;
     transition: .3s ease-out;
 }
-.team_card:hover {
-    border-color: #6366f1;
-}
-
 .team_card h3 {
     color: #f1f5f9;
 }
@@ -160,6 +149,25 @@ body {
     align-items: center;
     justify-content: center;
 }
+#login-section form{
+    padding: 30px !important;
+    min-height: 10vh !important;
+    min-width: 20vw !important;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-notice{
+    color: #94a3b8;
+    margin-top: 15px;
+    font-size: 14px;
+    text-wrap: wrap;
+    width: 100%;
+    text-align: left;
+}
 
 #contact h2, #login-section h2 {
     color: #6366f1;
@@ -172,7 +180,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    /* Dark Form Background */
     background-color: #1e293b;
     width: 60%;
     border-radius: 10px;
@@ -180,6 +187,7 @@ body {
     border: 1px solid #334155;
     box-shadow: 0 10px 25px rgba(107, 107, 107, 0.3);
 }
+
 
 #contact form input, #contact form textarea,
 #login-section form input, #login-section form textarea {
@@ -202,17 +210,12 @@ body {
     padding: 15px 40px;
     border: none;
     border-radius: 5px;
-    /* Professional Indigo Button */
     background: linear-gradient(180deg, #6366f1 0%, #4338ca 100%);
     color: white;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: .3s;
-}
-
-#contact button:hover, #login-section button:hover {
-    opacity: 0.8;
 }
 
 #backToTop {
@@ -231,9 +234,4 @@ body {
     font-size: 18px;
     transition: 0.3s;
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-}
-
-#backToTop:hover {
-    background-color: #059669;
-    transform: scale(1.1);
 }
