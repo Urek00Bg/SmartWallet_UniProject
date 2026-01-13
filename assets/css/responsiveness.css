@@ -17,6 +17,7 @@
         cursor: pointer;
         grid-column: 1;
     }
+
     #nav-toggle {
         position: static; 
         top: auto;
@@ -28,6 +29,12 @@
         background-color: transparent;
     }
 
+    .service_card{
+        text-align: center;
+    }
+    .service_card p, .service_card h2 {
+        text-align: left !important;
+    }
     /* Logo Alignment */
     .logo {
         grid-column: 2;

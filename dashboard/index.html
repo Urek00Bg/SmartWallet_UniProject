@@ -15,6 +15,7 @@
         <script src="../assets/js/navbar.js" defer></script>
     </head>
     <body>
+        <a href="#main-content" class="skip-link">Skip to content</a>
             <header>
                 <nav aria-label="Dashboard Navigation">
                     <div class="nav-hamburger">
@@ -108,6 +109,7 @@
                             <div class="buffer-info">
                                 <p>Risk Buffer: <strong id="reserved-sum">$0.00</strong></p>
                                 <p>Savings: <strong id="savings-sum">$0.00</strong></p>
+                                <p>End month savings: <strong id="end-month-savings">$0.00</strong></p>
                                 <hr>
                                 <p>Available for Spending: <strong id="available-sum" style="color: #2ecc71;">$0.00</strong></p>
                             </div>
@@ -122,6 +124,12 @@
                             <input type="text" id="expense-name" name="expense-name" placeholder="Groceries, Transport...">
                             <label for="expense-amount">Expense Amount:</label>
                             <input type="number" id="expense-amount" name="expense-amount" placeholder="$0.00">
+
+                            <div class="use-safety-funds">
+                                <input type="checkbox" id="expense-type-income" name="expense-type" value="income">
+                                <p> Use Safety Funds</p>
+                            </div>
+
                             <button type="button">Log Expense</button>
                         </div>
                     </div>

@@ -71,7 +71,11 @@ body {
     background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
     color: #f1f5f9;
     transition: .3s ease-out;
-
+}
+.service_card i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .service_card h3 {
