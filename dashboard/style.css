@@ -3,6 +3,7 @@ body{
     max-height: 100%;
     min-height: 100vh;
     color: #f1f5f9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #dashboard-landing-section, #dashboard-boxes{
@@ -121,7 +122,7 @@ body{
     z-index: 10;
     background: #1e293b; 
     border-bottom: 2px solid #6366f1;
-    color: #6366f1;
+    color: #e0e0e4;
 }
 
 .history-row {
