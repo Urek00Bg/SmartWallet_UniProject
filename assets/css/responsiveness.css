@@ -1,23 +1,83 @@
 @media screen and (max-width: 768px) {
-    .services_card_holder {
-        grid-template-columns: 1fr;
-    }
+    /* Nav Bar Structure */
     nav {
-        grid-template-columns: 1fr; /* Логото, менюто и слогана застават един под друг */
-        gap: 10px;
+        min-height: 10vh;
+        display: grid;
+        grid-template-columns: auto 1fr auto; 
+        padding: 0 15px;
     }
-    
-    .nav-item-container {
-        grid-template-columns: 1fr; /* Елементите в менюто един под друг */
+
+    /* Hamburger Button */
+    .nav-hamburger {
+        display: block !important; 
+        background: none;
+        border: none;
+        color: #f1f5f9;
+        font-size: 24px;
+        cursor: pointer;
+        grid-column: 1;
+    }
+
+    /* Logo Alignment */
+    .logo {
+        grid-column: 2;
         text-align: center;
     }
 
-    .services_card_holder, .team_card_holder {
-        grid-template-columns: 1fr; /* Картите стават в една колона */
+    .nav-item-container li{
+        max-height: 5vh;
+    }
+    /* Slide-Down Menu Logic */
+    .nav-menu {
+        display: block; 
+        grid-column: 1 / span 3; /* Spans full width of the nav */
+        width: 100%;
+        max-height: 0; /* Hidden state */
+        opacity: 0;
+        overflow: hidden; /* Clips content while closed */
+        transition: max-height 0.5s ease-in-out, opacity 0.3s ease;
     }
 
+    /* Class toggled by navbar.js */
+    .nav-menu.active {
+        max-height: 400px; /* Large enough for Home, About, Contact items */
+        opacity: 1;
+        padding-bottom: 20px;
+    }
+
+    /* Menu Item Stacking */
+    .nav-item-container {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        text-align: center;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    .nav-item-container li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Dashboard & Content Grids */
+    .services_card_holder, 
+    .team_card_holder, 
+    .boxes_holder {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Contact Form */
     #contact form {
-        width: 90%; /* Формата заема повече място на телефон */
+        width: 90%; 
         padding: 40px 20px;
+    }
+
+    /* Slogan - usually hidden or moved on mobile */
+    .nav-slogan {
+        display: none; 
+    }
+
+    #services{
+        display: block !important;
     }
 }

@@ -17,24 +17,28 @@
 
         <a href="#login-content" style="position: absolute; left: -10000px;" onfocus="this.style.position='static';">Skip to content</a>
 
-        <header>
-            <nav aria-label="Main Navigation">
-                <div class="logo">
-                    SmartWallet
-                </div>
-                <div class="nav-menu">
-                    <ul style="text-align: center;">
-                        <div class="nav-item-container">
+            <header>
+                <nav aria-label="Dashboard Navigation">
+                    <div class="nav-hamburger">
+                        <button id="nav-toggle" aria-label="Toggle Navigation Menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="logo">SmartWallet</div>
+                    
+                    <div class="nav-menu">
+                        <ul class="nav-item-container">
                             <li>
-                                <a href="../index.html#services">
+                                <a href="../index.html">
                                     <div class="item-2">
-                                        <div class="item-pic"><i class="fa-solid fa-briefcase"></i></div>
-                                        <p>Services</p>
+                                        <div class="item-pic"><i class="fa-solid fa-house"></i></div>
+                                        <p>Home</p>
                                     </div>
                                 </a>
                             </li>
                             <li>
-                                <a href="../index.html#aboutUs">
+                                <a href="#aboutUs">
                                     <div class="item-3">
                                         <div class="item-pic"><i class="fa-solid fa-envelope"></i></div>
                                         <p>About</p>
@@ -42,29 +46,28 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../index.html#contact">
+                                <a href="#contact">
                                     <div class="item-4">
                                         <div class="item-pic"><i class="fa-solid fa-info-circle"></i></div>
                                         <p>Contact</p>
                                     </div>
                                 </a>
                             </li>
-                        </div>
-                    </ul>
-                </div>
+                        </ul>
+                    </div>
 
-                <div class="nav-slogan">
-                    Your success, our commitment.
-                </div>
-            </nav>
-        </header>
+                    <div class="nav-slogan">
+                        <p>Welcome back, <span id="user-name">User</span></p>
+                    </div>
+                </nav>
+            </header>
 
         <main id="login-content">
             <section id="login-section" aria-labelledby="login-heading">
                 <h1 id="login-heading">Please log in to continue</h1>
                 
                 <div class="login-container">
-                    <form action="../dashboard/index.html" method="POST">
+                    <form action="../dashboard/index.html" method="GET">
                         <label for="username">Username:</label>
                         <input type="text" id="username" name="username" required>
 

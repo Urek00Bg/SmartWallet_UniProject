@@ -8,7 +8,6 @@ nav {
     grid-template-columns: 20% 60% 20%;
     place-items: center;
     background-color: #0f172a;
-    padding: 10px 0;
     border-bottom: 3px solid #1e293b52;
     box-shadow: 4px 13px 34px -4px #5270a152;
 }
@@ -55,12 +54,15 @@ a{
     color: #94a3b8;
     font-size: 14px;
 }
+.nav-hamburger {
+    display: none; 
+}
 #user-name {
     color: #10b981;
     font-weight: bold;
 }
 .item-pic {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 5px;
 }
 

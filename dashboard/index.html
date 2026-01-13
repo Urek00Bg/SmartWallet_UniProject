@@ -12,44 +12,53 @@
         <link rel="stylesheet" href="../assets/css/responsiveness.css">
         <script src="https://kit.fontawesome.com/89708da992.js" crossorigin="anonymous"></script>
         <script src="../assets/js/printName.js" defer></script>
+        <script src="../assets/js/navbar.js" defer></script>
     </head>
     <body>
-        <header>
-            <nav aria-label="Dashboard Navigation">
-                <div class="logo">SmartWallet</div>
-                <div class="nav-menu">
-                    <ul class="nav-item-container">
-                        <li>
-                            <a href="../index.html">
-                                <div class="item-2">
-                                    <div class="item-pic"><i class="fa-solid fa-house"></i></div>
-                                    <p>Home</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#aboutUs">
-                                <div class="item-3">
-                                    <div class="item-pic"><i class="fa-solid fa-envelope"></i></div>
-                                    <p>About</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact">
-                                <div class="item-4">
-                                    <div class="item-pic"><i class="fa-solid fa-info-circle"></i></div>
-                                    <p>Contact</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav-slogan">
-                    <p>Welcome back, <span id="user-name">User</span></p>
-                </div>
-            </nav>
-        </header>
+            <header>
+                <nav aria-label="Dashboard Navigation">
+                    <div class="nav-hamburger">
+                        <button id="nav-toggle" aria-label="Toggle Navigation Menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="logo">SmartWallet</div>
+                    
+                    <div class="nav-menu">
+                        <ul class="nav-item-container">
+                            <li>
+                                <a href="../index.html">
+                                    <div class="item-2">
+                                        <div class="item-pic"><i class="fa-solid fa-house"></i></div>
+                                        <p>Home</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#aboutUs">
+                                    <div class="item-3">
+                                        <div class="item-pic"><i class="fa-solid fa-envelope"></i></div>
+                                        <p>About</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact">
+                                    <div class="item-4">
+                                        <div class="item-pic"><i class="fa-solid fa-info-circle"></i></div>
+                                        <p>Contact</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-slogan">
+                        <p>Welcome back, <span id="user-name">User</span></p>
+                    </div>
+                </nav>
+            </header>
 
         <main id="main-content">
             <section id="dashboard-landing-section" aria-labelledby="dashboard-title">
@@ -79,16 +88,17 @@
                               <input type="number" id="add-more-money" name="add-more-money" placeholder="$0.00">
                               <button type="button">Add Money</button>
                        </div>
+                        <button type="button" id="reset-btn">Reset All Data</button>
                     </div>
 
                     <div class="dashboard_box">
                         <h2>Safety & Savings</h2>
                         <p>Protect yourself from unexpected bills and build your future.</p>
                         <div class="inputs_buffer-goals">
-                            <label for="buffer-range">Risk Protection: <span id="buffer-pct">10</span>%
+                            <label for="buffer-range">Risk funds: <span id="buffer-pct">10</span>%
                                 <br><span>We recommend 10-15% for safety</span>
                             </label>
-                            <input type="range" id="buffer-range" min="0" max="30" value="10">
+                            <input type="range" id="buffer-range" min="0"  max="50" value="5">
 
                             <label for="savings-range" style="margin-top: 15px; display: block;">Savings Goal: <span id="savings-pct">5</span>%
                                 <br><span>Pay yourself first!</span>
@@ -120,6 +130,7 @@
                         <h2>Expense and Income Tracker</h2>
                         <div class="transaction-history">
                             <div class="history-header">
+                                <div>ID</div>
                                 <div>Date</div>
                                 <div>Description</div>
                                 <div>Amount</div>

@@ -13,7 +13,7 @@ body {
 #hero {
     color: #f1f5f9;
     padding: 50px;
-    min-height: 40vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,7 +227,7 @@ body {
     color: white;
     cursor: pointer;
     padding: 20px;
-    border-radius: 50%; 
+    border-radius: 10%; 
     font-size: 18px;
     transition: 0.3s;
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
