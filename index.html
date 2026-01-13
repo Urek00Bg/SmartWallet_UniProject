@@ -1,79 +1,65 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>
-            SmartWallet
-        </title>
-        <meta name="description" content="">
+        <title>SmartWallet</title>
+        <meta name="description" content="SmartWallet - Your budget solution">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/nav-footer.css">
         <link rel="stylesheet" href="./assets/css/hover-animation.css">
         <link rel="stylesheet" href="./assets/css/responsiveness.css">
         <script src="https://kit.fontawesome.com/89708da992.js" crossorigin="anonymous"></script>
- 
     </head>
     <body>
 
-        <nav>
-    <div class="logo">
-        SmartWallet
-    </div>
-    <div class="nav-menu">
-        <ul class="nav-item-container">
-            <li>
-                <a href="#services">
-                    <div class="item-2">
-                        <div class="item-pic">
-                            <i class="fa-solid fa-briefcase"></i>
-                        </div>
-                        <p>Services</p>
-                    </div>
-                </a>
-            </li>
+        <header>
+            <nav>
+                <div class="logo">SmartWallet</div>
+                <div class="nav-menu">
+                    <ul class="nav-item-container">
+                        <li>
+                            <a href="#services">
+                                <div class="item-2">
+                                    <div class="item-pic"><i class="fa-solid fa-briefcase"></i></div>
+                                    <p>Services</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#aboutUs">
+                                <div class="item-3">
+                                    <div class="item-pic"><i class="fa-solid fa-envelope"></i></div>
+                                    <p>About</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <div class="item-4">
+                                    <div class="item-pic"><i class="fa-solid fa-info-circle"></i></div>
+                                    <p>Contact</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-slogan">
+                    <p>Welcome back, <span id="user-name">User</span></p>
+                </div>
+            </nav>
+        </header>
 
-            <li>
-                <a href="#aboutUs">
-                    <div class="item-3">
-                        <div class="item-pic">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <p>About</p>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#contact">
-                    <div class="item-4">
-                        <div class="item-pic">
-                            <i class="fa-solid fa-info-circle"></i>
-                        </div>
-                        <p>Contact</p>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="nav-slogan">
-        <p>Welcome back, <span id="user-name">User</span></p>
-    </div>
-        </nav>
-
-            <section id="hero">
-                <h1>Welcome to SmartWallet</h1>
+        <main>
+            <section id="hero" aria-labelledby="hero-h1">
+                <h1 id="hero-h1">Welcome to SmartWallet</h1>
                 <p>Your one-stop solution for all your budget needs</p>
-                
-               <a href="./login/index.html" id="callToActionBtn">Ready to Start?</a>
+                <a href="./login/index.html" id="callToActionBtn">Ready to Start?</a>
             </section>
 
-            <section id="services" class="fade-down">
-                <h2>Our Services</h2>
-
+            <section id="services" class="fade-down" aria-labelledby="services-h2">
+                <h2 id="services-h2">Our Services</h2>
                 <div class="services_card_holder">
                     <div class="service_card">
                         <i class="fa-solid fa-piggy-bank" style="font-size: xx-large;"></i>
@@ -90,27 +76,23 @@
                         <h2>Monthly insights</h2>
                         <p>We provide you with monthly insights into your spending habits, helping you make informed financial decisions.</p>
                     </div>
-
                     <div class="service_card">
                         <i class="fa-solid fa-hand-holding-dollar" style="font-size: xx-large;"></i>
                         <h2>Expense Tracker</h2>
                         <p>Expense Tracker with automatic budget updater</p>
                     </div>
-
                 </div>
             </section>
 
-            <section id="aboutUs" class="fade-down">
-                <h2>About Us</h2>
+            <section id="aboutUs" class="fade-down" aria-labelledby="about-h2">
+                <h2 id="about-h2">About Us</h2>
                 <div class="aboutUs-text">
-                    <p>At SmartWallet we prioritize your financial well-being. Our mission is to empower you with the knowledge and tools you need to take control of your budget and make informed financial decisions.
-                        What started off as a small uni project has now blossomed into a full-fledged platform dedicated to helping individuals achieve their financial goals.
-                    </p>
+                    <p>At SmartWallet we prioritize your financial well-being. Our mission is to empower you with the knowledge and tools you need to take control of your budget and make informed financial decisions.</p>
                 </div>
             </section>
 
-            <section id="team" class="fade-down">
-                <h2>Our Team</h2>
+            <section id="team" class="fade-down" aria-labelledby="team-h2">
+                <h2 id="team-h2">Our Team</h2>
                 <div class="team_card_holder">
                     <div class="team_card">
                         <i class="fa-solid fa-user" style="font-size: xx-large;"></i>
@@ -130,8 +112,8 @@
                 </div>
             </section>
 
-            <section id="contact" class="contact fade-down">
-                <h2>Contact Us</h2>
+            <section id="contact" class="contact fade-down" aria-labelledby="contact-h2">
+                <h2 id="contact-h2">Contact Us</h2>
                 <form>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -145,17 +127,18 @@
                     <button type="submit">Send Message</button>
                 </form>
             </section>
+        </main>
 
-            <footer>
-                <p>&copy; 2026 SmartWallet. All rights reserved.</p>
-            </footer>
+        <footer>
+            <p>&copy; 2026 SmartWallet. All rights reserved.</p>
+        </footer>
 
-            <button id="backToTop" title="Go to top">
-                <i class="fa-solid fa-arrow-up"></i>
-            </button>
+        <button id="backToTop" title="Go to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
 
-            <script src="./assets/js/fade_down.js" defer></script>
-            <script src="./assets/js/goUp.js" defer></script>
+        <script src="./assets/js/fade_down.js" defer></script>
+        <script src="./assets/js/goUp.js" defer></script>
 
     </body>
 </html>

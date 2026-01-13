@@ -1,86 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>
-            SmartWallet
-        </title>
-        <meta name="description" content="">
+        <title>SmartWallet - Login</title>
+        <meta name="description" content="Login to your SmartWallet account">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet" href="../assets/css/nav-footer.css">
         <link rel="stylesheet" href="../assets/css/hover-animation.css">
         <link rel="stylesheet" href="../assets/css/responsiveness.css">
         <script src="https://kit.fontawesome.com/89708da992.js" crossorigin="anonymous"></script>
- 
         <script src="../assets/js/login.js" defer></script>
     </head>
     <body>
 
+        <a href="#login-content" style="position: absolute; left: -10000px;" onfocus="this.style.position='static';">Skip to content</a>
 
-        <nav>
-            <div class="logo">
-                SmartWallet
-            </div>
-            <div class="nav-menu">
+        <header>
+            <nav aria-label="Main Navigation">
+                <div class="logo">
+                    SmartWallet
+                </div>
+                <div class="nav-menu">
                     <ul style="text-align: center;">
                         <div class="nav-item-container">
                             <li>
-                                <a href="#services">
+                                <a href="../index.html#services">
                                     <div class="item-2">
-                                        <div class="item-pic">
-                                            <i class="fa-solid fa-briefcase"></i>
-                                        </div>
+                                        <div class="item-pic"><i class="fa-solid fa-briefcase"></i></div>
                                         <p>Services</p>
                                     </div>
                                 </a>
                             </li>
-
                             <li>
-                                <a href="#aboutUs">
+                                <a href="../index.html#aboutUs">
                                     <div class="item-3">
-                                        <div class="item-pic">
-                                            <i class="fa-solid fa-envelope"></i>
-                                        </div>
+                                        <div class="item-pic"><i class="fa-solid fa-envelope"></i></div>
                                         <p>About</p>
                                     </div>
                                 </a>
                             </li>
-
                             <li>
-                                <a href="#contact">
+                                <a href="../index.html#contact">
                                     <div class="item-4">
-                                        <div class="item-pic">
-                                            <i class="fa-solid fa-info-circle"></i>
-                                        </div>
+                                        <div class="item-pic"><i class="fa-solid fa-info-circle"></i></div>
                                         <p>Contact</p>
                                     </div>
                                 </a>
                             </li>
                         </div>
                     </ul>
-            </div>
+                </div>
 
-            <div class="nav-slogan">
-                Your success, our commitment.
-            </div>
-        </nav>
+                <div class="nav-slogan">
+                    Your success, our commitment.
+                </div>
+            </nav>
+        </header>
 
-        <section id="login-section">
-            <h2>Please log in to continue</h2>
-            <div class="login-container">
-                <form action="../dashboard/index.html">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+        <main id="login-content">
+            <section id="login-section" aria-labelledby="login-heading">
+                <h2 id="login-heading">Please log in to continue</h2>
+                
+                <div class="login-container">
+                    <form action="../dashboard/index.html" method="POST">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
 
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
 
-                   <button type="submit">Login</button>
-                </form>
-            </div>
-        </section>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </section>
+        </main>
 
     </body>
 </html>

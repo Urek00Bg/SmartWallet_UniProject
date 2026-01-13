@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>SmartWallet | Dashboard</title>
-        <meta name="description" content="">
+        <meta name="description" content="Manage your SmartWallet budget and expenses.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="../assets/css/nav-footer.css">
@@ -14,127 +14,115 @@
         <script src="../assets/js/printName.js" defer></script>
     </head>
     <body>
-        <nav>
-            <div class="logo">
-                    SmartWallet
-            </div>
-            <div class="nav-menu">
-                <ul class="nav-item-container">
-
-                    <li>
-                        <a href="../index.html">
-                            <div class="item-2">
-                                <div class="item-pic">
-                                    <i class="fa-solid fa-house"></i>
+        <header>
+            <nav aria-label="Dashboard Navigation">
+                <div class="logo">SmartWallet</div>
+                <div class="nav-menu">
+                    <ul class="nav-item-container">
+                        <li>
+                            <a href="../index.html">
+                                <div class="item-2">
+                                    <div class="item-pic"><i class="fa-solid fa-house"></i></div>
+                                    <p>Home</p>
                                 </div>
-                                <p>Home</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#aboutUs">
-                            <div class="item-3">
-                                <div class="item-pic">
-                                    <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#aboutUs">
+                                <div class="item-3">
+                                    <div class="item-pic"><i class="fa-solid fa-envelope"></i></div>
+                                    <p>About</p>
                                 </div>
-                                <p>About</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#contact">
-                            <div class="item-4">
-                                <div class="item-pic">
-                                    <i class="fa-solid fa-info-circle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <div class="item-4">
+                                    <div class="item-pic"><i class="fa-solid fa-info-circle"></i></div>
+                                    <p>Contact</p>
                                 </div>
-                                <p>Contact</p>
-                            </div>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </div>
-            <div class="nav-slogan">
-                <p>Welcome back, <span id="user-name">User</span></p>
-            </div>
-        </nav>
-        <main>
-        <section id="dashboard-landing-section">
-            <div class="dashboard-here-text">
-                <h1>Welcome to Your Dashboard</h1>
-                <p>Here you can manage your account, view statistics, and access exclusive features.</p>
-            </div>
-        </section>
-    </main>
-        <section id="dashboard-boxes">
-
-            <div class="boxes_holder">
-
-                <div class="dashboard_box">
-                   <h2>Budget Planning</h2>
-                   <p>Provide your budget details below:</p>
-                   <div class="inputs">
-                          <label for="budget-amount">Set Budget Amount: <br><span>Enter your total budget for the month</span></label>
-                          <input type="number" id="budget-amount" name="budget-amount" placeholder="$0.00">
-                          <button type="button">Update Budget</button>
-
-                          <label for="immediate-expense">Log Immediate Expense:<br><span>Rent | Bills </span></label>
-                          <input type="number" id="immediate-expense" name="immediate-expense" placeholder="$0.00">
-                          <button type="button">Log Expense</button>
-
-                          <label for="add-more-money">Add More Money to Budget: <br> <span>Found some extra cash? Log it!</span></label>
-                          <input type="number" id="add-more-money" name="add-more-money" placeholder="$0.00">
-                          <button type="button">Add Money</button>
-                   </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+                <div class="nav-slogan">
+                    <p>Welcome back, <span id="user-name">User</span></p>
+                </div>
+            </nav>
+        </header>
 
-                <div class="dashboard_box">
-                    <h2>Safety Buffers</h2>
-                    <p>Protect yourself from inflation or unexpected bills.</p>
-                    <div class="inputs">
-                        <label for="buffer-range">Risk Protection: <span id="buffer-pct">10</span>%
-                            <br><span>We recommend 10-15% for safety</span>
-                        </label>
-                        <input type="range" id="buffer-range" min="0" max="30" value="10">
-                        
-                        <div class="buffer-info">
-                            <p>Reserved Amount: <strong id="reserved-sum">$0.00</strong></p>
-                            <p>Available for Spending: <strong id="available-sum">$0.00</strong></p>
+        <main id="main-content">
+            <section id="dashboard-landing-section" aria-labelledby="dashboard-title">
+                <div class="dashboard-here-text">
+                    <h1 id="dashboard-title">Welcome to Your Dashboard</h1>
+                    <p>Here you can manage your account, view statistics, and access exclusive features.</p>
+                </div>
+            </section>
+
+            <section id="dashboard-boxes" aria-labelledby="management-heading">
+                <h2 id="management-heading" class="visually-hidden">Financial Management Tools</h2>
+                <div class="boxes_holder">
+
+                    <div class="dashboard_box">
+                       <h2>Budget Planning</h2>
+                       <p>Provide your budget details below:</p>
+                       <div class="inputs">
+                              <label for="budget-amount">Set Budget Amount: <br><span>Enter your total budget for the month</span></label>
+                              <input type="number" id="budget-amount" name="budget-amount" placeholder="$0.00">
+                              <button type="button">Update Budget</button>
+
+                              <label for="immediate-expense">Log Immediate Expense:<br><span>Rent | Bills </span></label>
+                              <input type="number" id="immediate-expense" name="immediate-expense" placeholder="$0.00">
+                              <button type="button">Log Expense</button>
+
+                              <label for="add-more-money">Add More Money to Budget: <br> <span>Found some extra cash? Log it!</span></label>
+                              <input type="number" id="add-more-money" name="add-more-money" placeholder="$0.00">
+                              <button type="button">Add Money</button>
+                       </div>
+                    </div>
+
+                    <div class="dashboard_box">
+                        <h2>Safety Buffers</h2>
+                        <p>Protect yourself from inflation or unexpected bills.</p>
+                        <div class="inputs">
+                            <label for="buffer-range">Risk Protection: <span id="buffer-pct">10</span>%
+                                <br><span>We recommend 10-15% for safety</span>
+                            </label>
+                            <input type="range" id="buffer-range" min="0" max="30" value="10">
+                            
+                            <div class="buffer-info">
+                                <p>Reserved Amount: <strong id="reserved-sum">$0.00</strong></p>
+                                <p>Available for Spending: <strong id="available-sum">$0.00</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard_box">
+                        <h2>Log Expense</h2>
+                        <p>Record a new transaction to update your tracker.</p>
+                        <div class="inputs_log-expense">
+                            <label for="expense-name">Expense Name:</label>
+                            <input type="text" id="expense-name" name="expense-name" placeholder="Groceries, Transport...">
+                            <label for="expense-amount">Expense Amount:</label>
+                            <input type="number" id="expense-amount" name="expense-amount" placeholder="$0.00">
+                            <button type="button">Log Expense</button>
+                        </div>
+                    </div>
+
+                    <div class="dashboard_box">
+                        <h2>Expense and Income Tracker</h2>
+                        <div class="transaction-history">
+                            <div class="history-header">
+                                <div>Date</div>
+                                <div>Description</div>
+                                <div>Amount</div>
+                            </div>
+                            <div id="transaction-list"></div>
                         </div>
                     </div>
                 </div>
-
-                <div class="dashboard_box">
-                    <h2>Log Expense</h2>
-                    <p>Record a new transaction to update your tracker.</p>
-                    <div class="inputs_log-expense">
-                        <label for="expense-name">Expense Name:</label>
-                        <input type="text" id="expense-name" name="expense-name" placeholder="Groceries, Transport...">
-                        <label for="expense-amount">Expense Amount:</label>
-                        <input type="number" id="expense-amount" name="expense-amount" placeholder="$0.00">
-                        <button type="button">Log Expense</button>
-                    </div>
-                </div>
-
-                <div class="dashboard_box">
-                    <h2>Expense and Income Tracker</h2>
-                    
-                    <div class="transaction-history">
-                        <div class="history-header">
-                            <div>Date</div>
-                            <div>Description</div>
-                            <div>Amount</div>
-                        </div>
-                        
-                        <div id="transaction-list">
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+            </section>
+        </main>
         
         <script src="../assets/js/dashboard.js" defer></script>
     </body>
